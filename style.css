@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {scroll-behavior: smooth;}
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+    text-shadow: 0px 2px 10px rgba(250, 245, 245, 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover {
+    color: orange;
+    
+
+}
+
+/* Sticky */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .contentX {
+    padding-top: 60px;
+  }
+
+/* Header */
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.navbar .logo a {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+    
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none; 
+    border-radius: 7px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+
+/* Dropdown menu */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0px;
+    width: 300px;
+    background: rgba(22,28,31, 0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 7px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 210px;
+
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero */
+
+section#hero{
+
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* thumps */
+
+.thumps {
+    padding: 1rem;
+    border: 1 solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: wrap;
+    gap:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thump{
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/weather.png');
+    background-size: cover;
+    background-position: center;
+    transition: scale 0.2 ease;
+}
+
+.thump2{
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+   
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/dictionary.png');
+    transition: scale 0.2 ease;
+}
+
+.thump3{
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/digitalclock.png');
+    transition: scale 0.2 ease;
+}
+
+.thump4{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/photogallery.png');
+    transition: scale 0.2 ease;
+}
+
+.thump:hover{
+    scale: 1.10;
+    cursor: pointer;
+}
+
+.thump2:hover{
+    scale: 1.10;
+    cursor: pointer;
+}
+.thump3:hover{
+    scale: 1.10;
+    cursor: pointer;
+}
+.thump4:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.thumptxt{
+
+    padding-top: 0.7rem;
+    
+
+}
+
+
+.backtotop{
+    padding-top: 2rem;
+}
+
+
+/* Content */
+
+.content {
+    display: flex;
+    
+    color: white;
+    padding: 2rem;
+    
+    background-image: linear-gradient(#000816, #001524);
+    border-bottom: 1px solid rgb(83, 82, 82, 0.3);
+    border-top: 1px solid rgb(83, 82, 82, 0.3);
+    
+    width:100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+  }
+
+ .content .box {
+      
+    flex: 1 1 250px;
+    
+    gap:4rem;
+    
+    font-size: 2rem;
+    text-align: center;
+
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(22, 12, 12, 0.5);
+    background-color: rgba(2, 4, 26, 0.945);
+    width: 300px;
+    height: 400px;
+    
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+   
+  }
+  .content .box h1 {
+
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .content .box p {
+
+    font-size: 1rem;
+  }
+  .content .box.img {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/digitalclock.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .content .box.img2 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/weather.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .content .box.img3 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/dictionary.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  .content .box.img4 {
+    width: 100%;
+    text-align: center;
+    
+    background-image: url('images/photogallery.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+
+/* Responsive part */
+
+@media(max-width: 992px){
+.navbar .links,
+.navbar .action_btn {
+    display: none;
+}
+.navbar .toggle_btn{
+    display: block;
+}
+
+.dropdown_menu{
+    display: block;
+}
+
+}
+
+@media(max-width: 576px){
+
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
+
+  @media(max-width: 578px){
+
+  section#hero{
+    
+    height: calc(90vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    
+
+}
+#hero h1{
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+#hero p{
+    
+    margin-bottom: 0.8rem;
+}
+
+
+.thumps {
+    padding: 0.1rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: wrap;
+    gap:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thump {
+
+height: 70px;
+width: 70px;
+}
+.thump2 {
+
+height: 70px;
+width: 70px;
+}
+.thump3 {
+
+height: 70px;
+width: 70px;
+}
+.thump4 {
+
+height: 70px;
+width: 70px;
+}
+
+
+
+  }
