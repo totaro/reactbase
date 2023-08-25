@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactbase/static/css/main.3f8fa7fa.css",
+    "main.css": "/reactbase/static/css/main.3c5e69ea.css",
     "main.js": "/reactbase/static/js/main.a195692a.js",
     "static/js/787.879cfdd4.chunk.js": "/reactbase/static/js/787.879cfdd4.chunk.js",
     "index.html": "/reactbase/index.html",
-    "main.3f8fa7fa.css.map": "/reactbase/static/css/main.3f8fa7fa.css.map",
+    "main.3c5e69ea.css.map": "/reactbase/static/css/main.3c5e69ea.css.map",
     "main.a195692a.js.map": "/reactbase/static/js/main.a195692a.js.map",
     "787.879cfdd4.chunk.js.map": "/reactbase/static/js/787.879cfdd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f8fa7fa.css",
+    "static/css/main.3c5e69ea.css",
     "static/js/main.a195692a.js"
   ]
 }
